@@ -1,10 +1,10 @@
-var svgWidth = 960;
+var svgWidth = 900;
 var svgHeight = 500;
 
 var margin = {
   top: 20,
   right: 40,
-  bottom: 60,
+  bottom: 70,
   left: 100
 };
 
@@ -74,7 +74,7 @@ d3.csv("/assets/data/data.csv").then(function(myData) {
         .text(d => d.abbr)
         .attr("x", d => xLinearScale(d.poverty))
         .attr("y", d => yLinearScale(d.healthcare))
-        .attr("dy","5")
+        .attr("dy", "5")
         .attr("text-anchor","middle")
         .attr("font-size","12px");
 
